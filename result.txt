@@ -1,0 +1,21 @@
+Theoretical Peak - 1241 GFLOPS
+
+Naive : 
+Time: 26227639 us
+GFLOPS: 0.762478
+
+with tiling :
+Time: 26776289 us
+GFLOPS: 0.746855
+
+with tiling and loop reordering(i->k->j):
+Time: 21953479 us
+GFLOPS: 0.910926
+
+with tiling and loop reordering(i->k->j) and reduce load A[i][k]:
+Time: 20167312 us
+GFLOPS: 0.991605
+
+tile size 48:
+Time: 18797972 us
+GFLOPS: 1.06384
